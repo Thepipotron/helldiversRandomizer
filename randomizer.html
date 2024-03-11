@@ -6,15 +6,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>My Website</title>
-	<link rel="stylesheet" href="./style.css">
-	<link rel="icon" href="./favicon.ico" type="image/x-icon">
+	<link href="https://unpkg.com/tabulator-tables/dist/css/tabulator.min.css" rel="stylesheet">
+	<script type="text/javascript" src="https://unpkg.com/tabulator-tables/dist/js/tabulator.min.js"></script>
+	<link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
 	<main>
-		<h1>Welcome to My Website</h1>
+
+		<h1>Janky ass helldivers randomizer</h1>
+
+		<div id="weapontable"></div>
+
+		<div id="weapontable2"></div>
+
+		<script src="scripts/items.js"></script>
+		<script src="scripts/connect.js"></script>
+
+		<script>
+			window.onload = Startup;
+		</script>
 	</main>
-	<script src="index.js"></script>
 </body>
 
 </html>
