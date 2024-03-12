@@ -1,33 +1,28 @@
-.OptionTable {
-  border-collapse: collapse;
-  margin: 25px 0;
-  font-size: 0.9em;
-  font-family: sans-serif;
-  min-width: 400px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-}
-
-.OptionTable thead tr {
-  background-color: #009879;
+body {
+  background-color: #101010;
   color: #ffffff;
-  text-align: left;
+}
+h1 {
+  color: #ffffff;
+}
+nav a {
+  color: #ffffff;
+}
+footer {
+  color: #ffffff;
 }
 
-.OptionTable tbody tr {
-  border-bottom: 1px solid #dddddd;
+/*Theme the Tabulator element*/
+#weapontable {
+  background-color: #080202;
+  border: 1px solid #333;
+  border-radius: 10px;
 }
 
-.OptionTable tbody tr:nth-of-type(even) {
-  background-color: #f3f3f3;
-}
-
-.OptionTable tbody tr:last-of-type {
-  border-bottom: 2px solid #009879;
-}
-
-.OptionTable tbody tr.active-row {
-  font-weight: bold;
-  color: #009879;
+#stratagemtable {
+  background-color: #080202;
+  border: 1px solid #333;
+  border-radius: 10px;
 }
 
 div {

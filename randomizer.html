@@ -18,16 +18,58 @@
 
   <body>
     <main>
-      <h1>Janky ass helldivers randomizer</h1>
-      <div style="width: 800px; margin: 0 auto">
+      <h1 style="text-align: center">Janky ass helldivers randomizer</h1>
+      <div style="float: left; width: 50%">
         <div>Weapons</div>
         <div id="weapontable"></div>
+
+        <div style="height: 20px; margin: 0 auto"></div>
+        <div style="width: 800px; margin: 0 auto">
+          <div>Strategems</div>
+          <div id="stratagemtable"></div>
+        </div>
+		<div id="errorMsg"></div>
       </div>
-      <div style="height: 20px; margin: 0 auto"></div>
-      <div style="width: 800px; margin: 0 auto">
-        <div>Strategems</div>
-        <div id="stratagemtable"></div>
+      <div style="float: right; width: 50%; display: grid;">
+        <div><button type="button" onclick="randomize()">Randomize!</button></div>
+
+		<div>
+        	<div style="float: left; width: 50%;">
+        	  <div>Primary</div>
+        	  <div id="RandomPrimary">R23-Liberator</div>
+        	  <div style="width: 80%;"><img id="RandomPrimaryImage" src="images/Primary/AR23-Liberator.webp"></img></div>
+        	</div>
+        	<div style="float: right; width: 50%;">
+        	  <div>Secondary</div>
+        	  <div id="RandomSecondary">P-19 Redeemer</div>
+        	  <div style="width: 80%;"><img id="RandomSecondaryImage" src="images/Secondary/P-19 Redeemer.webp"></img></div>
+        	</div>
+		</div>
+	
+		<div style="height: 20px;"></div>
+        <div>
+			<div>Strategems</div>
+          <div style="width: 100%; display: flex">
+            <div style="width: 25%">
+              <div id="Strategem1">Anti-Personnel Minefield</div>
+              <div><object id="Strategem1Image" data="images/Engineering/Anti-Personnel Minefield.svg" height="100" width="100"></object></div>
+            </div>
+            <div style="width: 25%">
+              <div id="Strategem2">Orbital 120MM HE Barrage</div>
+              <div><object id="Strategem2Image" data="images/Orbital/Orbital 120MM HE Barrage.svg" height="100" width="100"></object></div>
+            </div>
+            <div style="width: 25%">
+              <div id="Strategem3">HMG Emplacement</div>
+              <div><object id="Strategem3Image" data="images/Bridge/HMG Emplacement.svg" height="100" width="100"></object></div>
+            </div>
+            <div style="width: 25%">
+              <div id="Strategem4">Eagle 110MM Rocket Pods</div>
+              <div><object id="Strategem4Image" data="images/Hanger/Eagle 110MM Rocket Pods.svg" height="100" width="100"></object></div>
+            </div>
+          </div>
+        </div>
       </div>
+
       <script src="scripts/items.js"></script>
       <script src="scripts/connect.js"></script>
     </main>

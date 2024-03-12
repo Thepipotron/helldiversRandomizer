@@ -120,7 +120,6 @@ var StratagemList = [
         name: "Eagle Napalm Airstrike",
         image: "images/Hanger/Eagle Napalm Airstrike.svg",
       },
-      { name: "Eagle Rearm", image: "images/Hanger/Eagle Rearm.svg" },
       {
         name: "Eagle Smoke Strike",
         image: "images/Hanger/Eagle Smoke Strike.svg",
